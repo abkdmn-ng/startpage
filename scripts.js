@@ -8,8 +8,8 @@
 const searchInput = document.querySelector("#searchbar > input")
 const searchButton = document.querySelector("#searchbar > button")
 
-const lookup = {"deepl":"https://deepl.com/","/4chan":"4chan.org/","/mail":"gmail.com/"}
-const engine = "startpage"
+const lookup = {"/mail":"gmail.com/","/youtube":"youtube.com/","/github":"github.com/"}
+const engine = "ecosia"
 const engineUrls = {
   deepl: "https://www.deepl.com/translator#-/-/",
   duckduckgo: "https://duckduckgo.com/?q=",
@@ -47,7 +47,7 @@ searchButton.onclick = search
  * inject bookmarks into html
  */
 
-const bookmarks = [{"id":"Vpt6SxCvd3eD64qr","label":"design tools","bookmarks":[{"id":"HBSQ2E3Io7lLIecL","label":"pixlrx","url":"https://pixlr.com/x/"},{"id":"C6aVOJAImk0oOfoa","label":"image enlarger","url":"https://bigjpg.com/en"},{"id":"QkYVSpspSQUodp1f","label":"haikei","url":"https://app.haikei.app/"},{"id":"lkMkcgycxhtALMFS","label":"css gradients","url":"https://larsenwork.com/easing-gradients/"}]},{"id":"36RKYbw0ZAzldebT","label":"worth reading","bookmarks":[{"id":"yBJOGeTEvf0eniow","label":"happy hues","url":"https://www.happyhues.co/"},{"id":"EDBkxJusqDaOYs5k","label":"styled-components","url":"https://www.joshwcomeau.com/react/demystifying-styled-components/"},{"id":"vG6eNQTDiL3RBUCJ","label":"react docs","url":"https://reactjs.org/docs/getting-started.html"}]},{"id":"Cf6l2igAFdpwJglF","label":"sources","bookmarks":[{"id":"6elt7wZu8vQA1Syp","label":"icons","url":"https://feathericons.com/"},{"id":"qgCPBwD6aXuZcTox","label":"gif","url":"https://designyoutrust.com/2019/05/the-chill-and-retro-motion-pixel-art-of-motocross-saito/"}]}]
+const bookmarks = [{"id":"Vpt6SxCvd3eD64qr","label":"basicNet","bookmarks":[{"id":"pYkdNwdk7siZ1hli","label":"Torrents","url":"https://boards.4chan.org/t/"},{"id":"wk5toisuU1Nih4Kh","label":"HIgh Resolution","url":"https://boards.4chan.org/hr/"},{"id":"JRSzulLvNw846t7X","label":"emails","url":"gmail.com"},{"id":"Bwaj6Bjkl3ZTqeAk","label":"Whatsapp Web","url":"web.whatsapp.com"}]},{"id":"Qqt1Vp7Sm00Z35nq","label":"ImageBoards","bookmarks":[{"id":"yycxYmLKovmi8tkF","label":"Wallpapers/General","url":"https://boards.4chan.org/wg/"},{"id":"M82cRhb8Z8btLVzT","label":"WorkSafe Gif","url":"https://boards.4chan.org/wsg/"},{"id":"hFTSjxV80eKnA30C","label":"Wallhaven","url":"https://wallhaven.cc/"},{"id":"LzyCc227TqZo2PRZ","label":"Gelbooru","url":"https://gelbooru.com/index.php?page=post&s=list&tags=all"}]}]
 
 const createGroupContainer = () => {
   const container = document.createElement("div")
